@@ -146,6 +146,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding: 18px;
 }
 nav .head {
   margin-left: 60px;
@@ -162,11 +163,13 @@ nav .head {
 .name {
   font-size: 33px;
   padding: 20px;
+  font-family: comic sans ms;
 }
 .interest {
   font-size: 25px;
   padding: 23px;
   border-bottom: 0.5px dotted black;
+  font-family: cursive;
 }
 .hobbies {
   font-size: 20px;
@@ -185,7 +188,7 @@ nav .head {
   justify-content: space-between;
 }
 .middle .content {
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 .middle .content .middle-section {
   padding: 20px;
@@ -201,4 +204,35 @@ nav .head {
   width: 335px;
   padding: 18px;
   font-size: larger;
+}
+.middle-section-history {
+  padding: 20px;
+  font-size: 30px;
+}
+table {
+  width: 100%;
+  text-align: left;
+}
+table .border {
+  border: 1px solid black;
+}
+table .bold {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 7px;
+  background: aliceblue;
+}
+table td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: azure;
+  font-size: 20px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  background: #d3d3d3;
+  font-style: italic;
+  font-family: georgia;
 }

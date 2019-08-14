@@ -134,3 +134,19 @@ html,
 body {
   height: 100%;
 }
+.container {
+  width: 800px;
+  margin: 20px;
+}
+h6 {
+  display: none;
+}
+nav {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.top-head {
+  background-color: lightgray;
+}

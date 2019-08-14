@@ -147,6 +147,11 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
 }
+nav .head {
+  margin-left: 60px;
+  text-decoration: none;
+  color: black;
+}
 .top-head {
   background-color: lightgray;
   padding: 24px;
@@ -174,4 +179,26 @@ nav {
   width: 152px;
   background-color: cadetblue;
   border-radius: 10px;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .content {
+  flex-basis: 40%;
+}
+.middle .content .middle-section {
+  padding: 20px;
+  font-size: 30px;
+}
+.middle .content .text {
+  font-size: larger;
+  padding: 10px;
+}
+.middle .list {
+  border: 1px solid black;
+  margin: auto;
+  width: 335px;
+  padding: 18px;
+  font-size: larger;
 }

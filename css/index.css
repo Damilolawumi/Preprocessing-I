@@ -238,3 +238,40 @@ table td {
   font-family: georgia;
 }
 /*Mobile view*/
+@media (max-width: 500px) {
+  .top-head {
+    background-color: brown;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .middle .list {
+    border: 1px solid black;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    font-size: larger;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .copyright {
+    background-color: white;
+    font-style: normal;
+  }
+  .middle-section {
+    font-family: georgia;
+    padding: 5px;
+  }
+  td {
+    background: white;
+  }
+  .middle .content .middle-section {
+    font-size: 20px;
+  }
+  .middle-section-history {
+    font-size: 20px;
+  }
+}

@@ -4,19 +4,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,25 +92,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -50,10 +137,174 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
+
 }
 
+.container {
+	width: 100%;
+	padding: 20px;
+}
+
+h6 {
+	display: none;
+}
+
+nav {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 18px;
+}
+
+nav .head {
+	margin-left: 60px;
+	text-decoration: none;
+	color: black;
+}
+
+.top-head {
+	background-color: lightgray;
+	padding: 24px;
+}
+
+.picture {
+	height: 70%;
+}
+
+.name {
+	font-size: 33px;
+	padding: 20px;
+	font-family: comic sans ms;
+}
+
+.interest {
+	font-size: 25px;
+	padding: 23px;
+	border-bottom: 0.5px dotted black;
+	font-family: cursive;
+}
+
+.hobbies {
+	font-size: 20px;
+	padding: 23px;
+}
+
+.team-up {
+	margin-left: 20px;
+	padding: 20px;
+	border: 1px solid black;
+	width: 152px;
+	background-color: cadetblue;
+	border-radius: 10px;
+}
+
+.middle {
+	display: flex;
+	// flex-flow: wrap;
+	justify-content: space-between;
+
+	.content {
+		flex-basis: 50%;
+
+		.middle-section {
+			padding: 20px;
+			font-size: 30px;
+		}
+
+		.text {
+			font-size: larger;
+			padding: 10px;
+		}
+	}
+
+	.list {
+		border: 1px solid black;
+		margin: auto;
+		width: 335px;
+		padding: 18px;
+		font-size: larger
+	}
+
+}
+
+.middle-section-history {
+	padding: 20px;
+	font-size: 30px;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+
+	.border {
+		border: 1px solid black;
+			}
+
+	.bold {
+		font-size: 30px;
+		font-weight: bold;
+		padding: 7px;
+		background: aliceblue;
+	}
+
+	td {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: azure;
+		font-size: 20px;
+		padding-left: 10px;
+	}
+}
+.copyright {
+		display: flex;
+		justify-content: center;
+		padding: 60px;
+		background: #d3d3d3;
+		font-style: italic;
+		font-family: georgia;
+	}
+	/*Mobile view*/ 
+	@media (max-width:500px){
+.top-head{
+	background-color: brown;
+}
+.middle{
+	display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.middle .list{
+	border: 1px solid black;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    font-size: larger;
+}
+.text{
+	font-size: 18px;
+}
+.copyright{
+	background-color: white;
+    font-style: normal;
+}
+.middle-section{
+	font-family: georgia;
+    padding: 5px;
+}
+td{
+background: white;
+}
+.middle .content .middle-section{
+	font-size: 20px;
+}
+.middle-section-history {
+	font-size: 20px;
+}
+	}
